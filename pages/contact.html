@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/carousel.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $("#header").load("./header.html");
+        });
+
+        $(function () {
+            $("#footer").load("./footer.html");
+        });
+    </script>
+
+</head>
+
+<body class="body-contact">
+
+    <div id="header"></div>
+
+    <main>
+
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-6 themed-grid-col">
+                    <h1>Contato</h1>
+                    <br><br>
+                    <table>
+                        <tr>
+                            <th style="float:left">E-mail: &nbsp;&nbsp;&nbsp;&nbsp;</th>
+                            <th><a href="malito:francielefischer@outlook.com">francielefischer@outlook.com</a></th>
+                        </tr>
+                        <tr>
+                            <th>Telefone: &nbsp;&nbsp;&nbsp;&nbsp;</th>
+                            <th>(51) 9.9652-37733</th>
+                        </tr>
+                        <tr>
+                            <th> </th>
+                            <th>
+                                <a target="__blank" href="https://www.instagram.com/francielefischerr/"> <img
+                                        class="icons" style="margin-left: 15px;" src="../icons/instagram.png"
+                                        alt=""></a>
+                                <a target="__blank" href="https://www.facebook.com/franciele.fischer.7"><img
+                                        class="icons" src="../icons/facebook.png" alt=""></a>
+                            </th>
+                        </tr>
+
+                    </table>
+
+
+                </div>
+                <div class="col-md-1 themed-grid-col col-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1013.5594091256709!2d-51.19658382640415!3d-29.658407325601832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95195b40b702017b%3A0xa54f80f00c9586db!2sR.%20J%C3%BAlio%20de%20Castilhos%2C%20613%20-%20Das%20Quintas%2C%20Est%C3%A2ncia%20Velha%20-%20RS%2C%2093615-700!5e0!3m2!1spt-BR!2sbr!4v1656871548942!5m2!1spt-BR!2sbr"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="map-contact"></iframe>
+                    <!--<iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.1143137467707!2d-51.19783438516912!3d-29.65845702039035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95195b40b702017b%3A0xa54f80f00c9586db!2sR.%20J%C3%BAlio%20de%20Castilhos%2C%20613%20-%20Das%20Quintas%2C%20Est%C3%A2ncia%20Velha%20-%20RS%2C%2093615-700!5e0!3m2!1spt-BR!2sbr!4v1656453950572!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="map-contact"></iframe></div>-->
+            </div>
+        </div>
+
+
+
+        <div class="container-md">
+            <h3 class="text-msg">Deixe uma mensagem</h3>
+            <form action="malito:michel.natan@outlook.com.br" method="POST" enctype="text/plain" class="row g-3">
+                <div class="col-md-8">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+                <div class="col-md-8">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input required type="email" class="form-control" id="email">
+                </div>
+                <div class="col-8">
+                    <label for="assunto" class="form-label">Assunto</label>
+                    <input required type="text" class="form-control" id="assunto">
+                </div>
+                <div class="col-8">
+                    <label required for="texto" class="form-label"></label>
+                    <textarea class="form-control" id="texto" rows="3"
+                        placeholder="Deixe sua mensagem aqui..."></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="reset" class="btn btn-secondary" value="Limpar">Limpar</button>
+                </div>
+
+            </form>
+        </div>
+
+
+        </div>
+        </div>
+    </main>
+
+
+    <div id="footer"></div>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
